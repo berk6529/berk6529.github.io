@@ -1,0 +1,22 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berk6529/Angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berk6529/Angular/issues"
+  },
+  "homepage": "https://github.com/berk6529/Angular#readme",
+  "dependencies": {
+    "angular": "file:"
+  }
+}

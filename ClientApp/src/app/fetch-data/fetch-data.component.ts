@@ -21,9 +21,6 @@ export class FetchDataComponent {
   }
 }
 
-
-
-
 interface names {
   FirstName: string,
   LastName: string,

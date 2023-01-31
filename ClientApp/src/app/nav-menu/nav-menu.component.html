@@ -20,17 +20,16 @@
         [ngClass]="{ show: isExpanded }"
       >
         <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
+          <li class="nav-item"
+              [routerLinkActive]="['link-active']"
+              [routerLinkActiveOptions]="{ exact: true }">
             <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
           </li>
+          <li class="nav-item" [routerLinkActive]="['ahsan']">
+            <a class="nav-link text-dark" [routerLink]="['/ahsan']">Ahsan</a>
+          </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Sustenance Employee List</a
-            >
+            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">Sustenance Employee List</a>
           </li>
         </ul>
       </div>

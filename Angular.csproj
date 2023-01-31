@@ -22,6 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Remove="ClientApp\src\app\Ahsan\ahsan.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Photos\" />
   </ItemGroup>
 
