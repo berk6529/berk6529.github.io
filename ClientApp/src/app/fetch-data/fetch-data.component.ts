@@ -1,23 +1,32 @@
 import { Component, Inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-fetch-data',
   templateUrl: './fetch-data.component.html'
 })
 export class FetchDataComponent {
-  public forecasts: WeatherForecast[] = [];
+  nameList!: Array<names>;
 
-  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-    http.get<WeatherForecast[]>(baseUrl + 'weatherforecast').subscribe(result => {
-      this.forecasts = result;
-    }, error => console.error(error));
+
+  ngOnInit() {
+
+    this.nameList = [
+      { FirstName: "Brad", LastName: "Berkobien", JobTitle: "Senior Software Engineer, Production Support", Overview: "I Like to solve things" },
+      { FirstName: "Keith", LastName: "Morton", JobTitle: "Software Engineer, Production Support", Overview: "The Man, The Myth, The legend" },
+      { FirstName: "Ana", LastName: "Ausek", JobTitle: "Software Engineer", Overview: "Really good developer" },
+      { FirstName: "George", LastName: "Fernandez", JobTitle: "Software Engineer", Overview: "Super rad " }
+    ]
+
   }
 }
 
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
+
+
+
+interface names {
+  FirstName: string,
+  LastName: string,
+  JobTitle: string,
+  Overview: string
 }
