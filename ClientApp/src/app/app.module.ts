@@ -9,6 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AhsanComponent } from './Ahsan/ahsan.component';
+import { AndresComponent } from './Andres/andres.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AhsanComponent } from './Ahsan/ahsan.component';
     NavMenuComponent,
     HomeComponent,
     FetchDataComponent,
-    AhsanComponent
+    AhsanComponent,
+    AndresComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,6 +28,7 @@ import { AhsanComponent } from './Ahsan/ahsan.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'ahsan', component: AhsanComponent},
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'andres', component: AndresComponent },
     ])
   ],
   providers: [],
