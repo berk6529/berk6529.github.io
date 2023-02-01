@@ -13,17 +13,5 @@ namespace Angular.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IEnumerable<Name> Get()
-        {
-            yield return new Name
-            {
-                FirstName = "Brad",
-                LastName = "Berkobien",
-                JobTitle = "Senior Software Engineer, Production Support",
-                Overview = "I like Dogs and coding"
-            };
-            ;
-        }
     }
 }
