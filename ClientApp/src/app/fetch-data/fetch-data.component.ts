@@ -13,10 +13,10 @@ export class FetchDataComponent {
   ngOnInit() {
 
     this.nameList = [
-      { FirstName: "Brad", LastName: "Berkobien", JobTitle: "Senior Software Engineer, Production Support", Overview: "I Like to solve things" },
-      { FirstName: "Keith", LastName: "Morton", JobTitle: "Software Engineer, Production Support", Overview: "The Man, The Myth, The legend" },
-      { FirstName: "Ana", LastName: "Ausek", JobTitle: "Software Engineer", Overview: "Really good developer" },
-      { FirstName: "George", LastName: "Fernandez", JobTitle: "Software Engineer", Overview: "Super rad " }
+      { FirstName: "Brad", LastName: "Berkobien", JobTitle: "Senior Software Engineer, Production Support", Overview: "I Like to solve things", RouterLink: "/brad" },
+      { FirstName: "Keith", LastName: "Morton", JobTitle: "Software Engineer, Production Support", Overview: "The Man, The Myth, The legend", RouterLink: "/keith" },
+      { FirstName: "Ahsan", LastName: "Ahmad", JobTitle: "Software Engineer", Overview: "Really good developer", RouterLink: "/ahsan" },
+      { FirstName: "George", LastName: "Fernandez", JobTitle: "Software Engineer", Overview: "Super rad ", RouterLink: "/george" }
     ]
 
   }
@@ -26,5 +26,6 @@ interface names {
   FirstName: string,
   LastName: string,
   JobTitle: string,
-  Overview: string
+  Overview: string,
+  RouterLink: string
 }
