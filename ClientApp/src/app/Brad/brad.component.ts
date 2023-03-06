@@ -13,5 +13,7 @@ export class BradComponent {
 
    GoBack() {
      this._location.back();
-    }
+  }
+
+
 }
