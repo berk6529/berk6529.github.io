@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import { Location } from '@angular/common';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'brad',
@@ -11,9 +11,10 @@ export class BradComponent {
 
    constructor(private _location: Location) { }
 
-   GoBack() {
-     this._location.back();
-  }
+
+    GoBack() {
+      this._location.back();
+    }
 
 
 }

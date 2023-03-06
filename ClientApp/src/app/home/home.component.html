@@ -1,4 +1,23 @@
+<h1 id="tableLabel">Employee List</h1>
 
-<h1>Sustenance Engineering</h1>
+<p *ngIf="!nameList"><em>Loading...</em></p>
 
-<img src="../../assets/sunsetorsomething.png"  />
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="nameList">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Job Title</th>
+      <th>Overview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let name of nameList">
+      <a class="nav-link link-primary" routerLinkActive="active" routerLink="{{name.RouterLink}}">{{ name.FirstName}}</a>
+      <td>{{ name.LastName}}</td>
+      <td>{{ name.JobTitle}}</td>
+      <td>{{ name.Overview }}</td>
+    </tr>
+  </tbody>
+</table>
+

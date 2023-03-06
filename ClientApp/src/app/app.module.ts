@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AhsanComponent } from './Ahsan/ahsan.component';
 import { AndresComponent } from './Andres/andres.component';
 import { BradComponent } from './Brad/brad.component';
@@ -17,7 +16,6 @@ import { BradComponent } from './Brad/brad.component';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    FetchDataComponent,
     AhsanComponent,
     AndresComponent,
     BradComponent
@@ -30,7 +28,6 @@ import { BradComponent } from './Brad/brad.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'ahsan', component: AhsanComponent},
-      { path: 'fetch-data', component: FetchDataComponent },
       { path: 'andres', component: AndresComponent },
       { path: 'brad', component: BradComponent },
     ])

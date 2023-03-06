@@ -1,52 +1,14 @@
 <header>
   <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">Our Wonderful Team</a>
-      <button class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              aria-label="Toggle navigation"
-              [attr.aria-expanded]="isExpanded"
-              (click)="toggle()">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
-           [ngClass]="{ show: isExpanded }">
-        <ul class="navbar-nav ">
-          <li class="nav-item"
-              [routerLinkActive]="['link-active']"
-              [routerLinkActiveOptions]="{ exact: true }">
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
-          </li>
-
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">Sustenance Employee List</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Employees
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" [routerLink]="'/ahsan'">Ahsan</a>
-              </li>
-              <li>
-                <a class="dropdown-item" [routerLink]="'/brad'">Brad</a>
-              </li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-
-        </ul>
+      <div class="page__style projects">
+        <div class="page__description">
+          <div id="people">
+            <h1></h1>
+            <button class="btn_nav people_link">People</button>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
 </header>
-<script type="text/javascript">
-
-        $(document).ready(function () {
-            $('.dropdown-toggle').dropdown();
-        });
-</script> 
