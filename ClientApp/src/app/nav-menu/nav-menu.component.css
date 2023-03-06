@@ -77,7 +77,7 @@ html {
   text-decoration: underline;
 }
 .animate_content {
-  animation: animate 3s ease;
+  animation: animate 5s ease;
 }
 .fadeIn {
   z-index: 10;

@@ -14,23 +14,23 @@ export class NavMenuComponent {
       $('.btn_nav').on("click", function() {
           // animate content
           $('.page__style').addClass('animate_content');
-          $('.page__description').fadeOut(100).delay(2800).fadeIn();
+          $('.page__description').fadeOut(2100).delay(2800).fadeIn();
         
           setTimeout(function() {
             $('.page__style').removeClass('animate_content');
-          }, 3200);
+          }, 5200);
         
           //remove fadeIn class after 1500ms
           setTimeout(function() {
             $('.page__style').removeClass('fadeIn');
-          }, 1500);
+          }, 3500);
         
         });
         
         $('.people_link').on("click",function() {
           setTimeout(function() {
             $('.people').addClass('fadeIn');
-          }, 1500);
+          }, 3500);
       });
     });
 }
