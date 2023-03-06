@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AhsanComponent } from './Ahsan/ahsan.component';
 import { AndresComponent } from './Andres/andres.component';
+import { BradComponent } from './Brad/brad.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { AndresComponent } from './Andres/andres.component';
     HomeComponent,
     FetchDataComponent,
     AhsanComponent,
-    AndresComponent
+    AndresComponent,
+    BradComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -29,6 +32,7 @@ import { AndresComponent } from './Andres/andres.component';
       { path: 'ahsan', component: AhsanComponent},
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'andres', component: AndresComponent },
+      { path: 'brad', component: BradComponent },
     ])
   ],
   providers: [],
