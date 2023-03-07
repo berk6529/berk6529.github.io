@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.2.0]
+    steps:
+      - uses: actions/checkout@master
+      - name: install, build, and test
+        run: |
+          npm install
+          npm run build
+          npm run start
+        env:
+          CI: true
+      - name: Deploy to production
+        uses: awibox/deploy-to-github-pages-action@master
+        env:
+          AUTHOR: awibox
+          BUILD_PATH: public
+          GITHUB_PAGE_NAME: berk6529.github.io
+          PA_TOKEN: ${{ secrets.PA_TOKEN }}
+          USERNAME: berk6529
+          EMAIL: bradberkobien@gmail.com
