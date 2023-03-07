@@ -1,6 +1,5 @@
 # Angular 15.1.2
 # Typescript 4.9.5
-# jQuery 3.6.0
 
 To Run:
 
@@ -8,3 +7,9 @@ To Run:
 2. cd to the ClientApp Folder
 3. npm run build
 4. npm run start
+
+nvm list
+nvm install 18.10
+nvm use 18.10
+
+14.17.2 also works for commands that don't run with the newer node
