@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { AhsanComponent } from './Ahsan/ahsan.component';
 import { AndresComponent } from './Andres/andres.component';
 import { BradComponent } from './Brad/brad.component';
+import { KeithComponent } from './Keith/keith.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { BradComponent } from './Brad/brad.component';
       { path: 'ahsan', component: AhsanComponent},
       { path: 'andres', component: AndresComponent },
       { path: 'brad', component: BradComponent },
+      { path: 'keith', component: KeithComponent },
+
     ])
   ],
   providers: [],
