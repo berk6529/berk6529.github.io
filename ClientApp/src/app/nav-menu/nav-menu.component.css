@@ -28,7 +28,7 @@ html {
   display: none;
 }
 .page__style {
-  background: #6d326d;
+  background-image: url("../../assets/background.jpg");
   font-family: OpenSans-Regular, sans-serif;
   position: fixed;
   top: 0;
